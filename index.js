@@ -67,10 +67,100 @@
 //   console.log(index);
 //   arr.push(index);
 // }
-
 // const result = arr.reduce(
 //   (accumelator, currentValue) => accumelator + currentValue,
 //   0
 // );
 
 // console.log(result);
+
+////////////////////////////////
+// Write a program that will show sum of even numbers and sum of odd numbers found in an array
+
+// const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// function evenCheck(value) {
+//   return value % 2 == 0 ? value : "";
+// }
+// function oddCheck(value) {
+//   return value % 2 ? value : "";
+// }
+// function sum(values) {
+//   const result = values.reduce(
+//     (accumelator, currentValue) => accumelator + currentValue,
+//     0
+//   );
+//   return result;
+// }
+
+// const evenValues = arr.filter((items) => items == evenCheck(items));
+// const oddValues = arr.filter((items) => items == oddCheck(items));
+
+// const evenValuesSum = sum(evenValues);
+// const oddValuesSum = sum(oddValues);
+
+// console.log("The sum of even values is " + evenValuesSum);
+// console.log("The sum of odd values " + oddValuesSum);
+
+////////////////////////////////
+// Write a program that will display whether a number is a prime number or not
+// function prime(number) {
+//   if (number <= 1) {
+//     return false;
+//   }
+//   if (number <= 3) {
+//     return true;
+//   }
+//   if (number % 2 === 0 || number % 3 === 0) {
+//     return false;
+//   }
+//   for (let i = 5; i * i <= number; i += 6) {
+//     if (number % i === 0 || number % (i + 2) === 0) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
+// // Test the function
+// const number = 9;
+// if (prime(number)) {
+//   console.log(`${number} is a prime number.`);
+// } else {
+//   console.log(`${number} is not a prime number.`);
+// }
+
+//////////////////////////////////
+// Write a program to find the sum of the following series: 1+4+27+256+ ... n terms
+
+// const inputNumber = 32;
+// const arr = [];
+
+// for (let index = 1; index <= inputNumber; index++) {
+//   const result = Math.pow(index, index);
+//   arr.push(result);
+//   console.log(result);
+// }
+// console.log(arr);
+
+// function sum(values) {
+//   const result = values.reduce(
+//     (accumelator, currentValue) => accumelator + currentValue,
+//     0
+//   );
+//   return result;
+// }
+// const sumOFAll = sum(arr);
+// console.log("Sum of All the values " + sumOFAll);
+
+//////////////////////////////////
+// Use nested loops to create a triangle of stars
+// for (let i = 1; i <= 5; i++) {
+//   let row = "";
+//   for (let j = 5; j >= i; j--) {
+//     row += "*";
+//   }
+//   console.log(row);
+// }
+
+
+
